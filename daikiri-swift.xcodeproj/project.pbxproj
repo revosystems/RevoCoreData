@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67DD0BAE4542CE6EB9266FFD /* Pods_daikiri_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C752F0964592BD036E7617 /* Pods_daikiri_swift.framework */; };
 		8D3C8EB023C4E0ED003A5993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EAF23C4E0ED003A5993 /* AppDelegate.swift */; };
 		8D3C8EB223C4E0ED003A5993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB123C4E0ED003A5993 /* SceneDelegate.swift */; };
 		8D3C8EB423C4E0ED003A5993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB323C4E0ED003A5993 /* ViewController.swift */; };
@@ -15,6 +16,10 @@
 		8D3C8EBC23C4E0EE003A5993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C8EBB23C4E0EE003A5993 /* Assets.xcassets */; };
 		8D3C8EBF23C4E0EE003A5993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C8EBD23C4E0EE003A5993 /* LaunchScreen.storyboard */; };
 		8D3C8ECA23C4E0EF003A5993 /* daikiri_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EC923C4E0EF003A5993 /* daikiri_swiftTests.swift */; };
+		8D3C8ED823C4E160003A5993 /* Daikiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED523C4E160003A5993 /* Daikiri.swift */; };
+		8D3C8ED923C4E160003A5993 /* DaikiriCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED623C4E160003A5993 /* DaikiriCoreData.swift */; };
+		8D3C8EDA23C4E160003A5993 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */; };
+		FC39CB2F52C23ED14BB9B9AC /* Pods_daikiri_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AE31F37DFC78C22B59C6A9 /* Pods_daikiri_swiftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AE31F37DFC78C22B59C6A9 /* Pods_daikiri_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daikiri_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B15274CC87BC3800CE6DEB3 /* Pods-daikiri-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daikiri-swift.debug.xcconfig"; path = "Target Support Files/Pods-daikiri-swift/Pods-daikiri-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		6E7D03A32F5CBB58C0F27F1D /* Pods-daikiri-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daikiri-swiftTests.debug.xcconfig"; path = "Target Support Files/Pods-daikiri-swiftTests/Pods-daikiri-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		787FBA9EE07368B631E3D178 /* Pods-daikiri-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daikiri-swift.release.xcconfig"; path = "Target Support Files/Pods-daikiri-swift/Pods-daikiri-swift.release.xcconfig"; sourceTree = "<group>"; };
 		8D3C8EAC23C4E0ED003A5993 /* daikiri-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daikiri-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3C8EAF23C4E0ED003A5993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3C8EB123C4E0ED003A5993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +49,11 @@
 		8D3C8EC523C4E0EF003A5993 /* daikiri-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daikiri-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3C8EC923C4E0EF003A5993 /* daikiri_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daikiri_swiftTests.swift; sourceTree = "<group>"; };
 		8D3C8ECB23C4E0EF003A5993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D3C8ED523C4E160003A5993 /* Daikiri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daikiri.swift; sourceTree = "<group>"; };
+		8D3C8ED623C4E160003A5993 /* DaikiriCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaikiriCoreData.swift; sourceTree = "<group>"; };
+		8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		B8C752F0964592BD036E7617 /* Pods_daikiri_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daikiri_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB3FBC191660E31001D9ADE /* Pods-daikiri-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daikiri-swiftTests.release.xcconfig"; path = "Target Support Files/Pods-daikiri-swiftTests/Pods-daikiri-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DD0BAE4542CE6EB9266FFD /* Pods_daikiri_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +69,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC39CB2F52C23ED14BB9B9AC /* Pods_daikiri_swiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CB460C2EDAF81EA35718E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C752F0964592BD036E7617 /* Pods_daikiri_swift.framework */,
+				13AE31F37DFC78C22B59C6A9 /* Pods_daikiri_swiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35ECAD74589877B284039838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B15274CC87BC3800CE6DEB3 /* Pods-daikiri-swift.debug.xcconfig */,
+				787FBA9EE07368B631E3D178 /* Pods-daikiri-swift.release.xcconfig */,
+				6E7D03A32F5CBB58C0F27F1D /* Pods-daikiri-swiftTests.debug.xcconfig */,
+				CCB3FBC191660E31001D9ADE /* Pods-daikiri-swiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8D3C8EA323C4E0ED003A5993 = {
 			isa = PBXGroup;
 			children = (
 				8D3C8EAE23C4E0ED003A5993 /* daikiri-swift */,
 				8D3C8EC823C4E0EF003A5993 /* daikiri-swiftTests */,
 				8D3C8EAD23C4E0ED003A5993 /* Products */,
+				35ECAD74589877B284039838 /* Pods */,
+				0CB460C2EDAF81EA35718E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +119,7 @@
 		8D3C8EAE23C4E0ED003A5993 /* daikiri-swift */ = {
 			isa = PBXGroup;
 			children = (
+				8D3C8ED423C4E13E003A5993 /* lib */,
 				8D3C8EAF23C4E0ED003A5993 /* AppDelegate.swift */,
 				8D3C8EB123C4E0ED003A5993 /* SceneDelegate.swift */,
 				8D3C8EB323C4E0ED003A5993 /* ViewController.swift */,
@@ -102,6 +141,16 @@
 			path = "daikiri-swiftTests";
 			sourceTree = "<group>";
 		};
+		8D3C8ED423C4E13E003A5993 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8D3C8ED523C4E160003A5993 /* Daikiri.swift */,
+				8D3C8ED623C4E160003A5993 /* DaikiriCoreData.swift */,
+				8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3C8ECE23C4E0EF003A5993 /* Build configuration list for PBXNativeTarget "daikiri-swift" */;
 			buildPhases = (
+				60ADEBCAD9240E9F4C559CB7 /* [CP] Check Pods Manifest.lock */,
 				8D3C8EA823C4E0ED003A5993 /* Sources */,
 				8D3C8EA923C4E0ED003A5993 /* Frameworks */,
 				8D3C8EAA23C4E0ED003A5993 /* Resources */,
+				5FBDCF883D85603873874465 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3C8ED123C4E0EF003A5993 /* Build configuration list for PBXNativeTarget "daikiri-swiftTests" */;
 			buildPhases = (
+				EA34F983A2FDFDECDEADA38B /* [CP] Check Pods Manifest.lock */,
 				8D3C8EC123C4E0EF003A5993 /* Sources */,
 				8D3C8EC223C4E0EF003A5993 /* Frameworks */,
 				8D3C8EC323C4E0EF003A5993 /* Resources */,
@@ -198,12 +250,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FBDCF883D85603873874465 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daikiri-swift/Pods-daikiri-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daikiri-swift/Pods-daikiri-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-daikiri-swift/Pods-daikiri-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60ADEBCAD9240E9F4C559CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-daikiri-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA34F983A2FDFDECDEADA38B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-daikiri-swiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D3C8EA823C4E0ED003A5993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3C8EDA23C4E160003A5993 /* QueryBuilder.swift in Sources */,
+				8D3C8ED923C4E160003A5993 /* DaikiriCoreData.swift in Sources */,
 				8D3C8EB423C4E0ED003A5993 /* ViewController.swift in Sources */,
+				8D3C8ED823C4E160003A5993 /* Daikiri.swift in Sources */,
 				8D3C8EB023C4E0ED003A5993 /* AppDelegate.swift in Sources */,
 				8D3C8EB223C4E0ED003A5993 /* SceneDelegate.swift in Sources */,
 				8D3C8EBA23C4E0ED003A5993 /* daikiri_swift.xcdatamodeld in Sources */,
@@ -364,6 +483,7 @@
 		};
 		8D3C8ECF23C4E0EF003A5993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B15274CC87BC3800CE6DEB3 /* Pods-daikiri-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +502,7 @@
 		};
 		8D3C8ED023C4E0EF003A5993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787FBA9EE07368B631E3D178 /* Pods-daikiri-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +521,7 @@
 		};
 		8D3C8ED223C4E0EF003A5993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7D03A32F5CBB58C0F27F1D /* Pods-daikiri-swiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +544,7 @@
 		};
 		8D3C8ED323C4E0EF003A5993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB3FBC191660E31001D9ADE /* Pods-daikiri-swiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
