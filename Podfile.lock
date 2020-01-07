@@ -1,0 +1,16 @@
+PODS:
+  - RevoFoundation (0.0.22)
+
+DEPENDENCIES:
+  - RevoFoundation
+
+SPEC REPOS:
+  trunk:
+    - RevoFoundation
+
+SPEC CHECKSUMS:
+  RevoFoundation: 6afcfe6bbe2f26b760704e60d286757f2b262ec2
+
+PODFILE CHECKSUM: 107618e3f4b29dedafc8b3350c9d92d4339acdb2
+
+COCOAPODS: 1.8.4
