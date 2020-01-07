@@ -1,7 +1,11 @@
 import Foundation
 import CoreData
 
-class QueryBuilder{
+protocol FromManaged{
+    init(managed:NSManagedObject?)
+}
+
+class QueryBuilder<Entity: FromManaged> {
     
     let entityName : String
     
@@ -39,15 +43,17 @@ class QueryBuilder{
                 fatalError("Error fetching objects: \(nserror), \(nserror.userInfo)");
             }
         }
-        return results!;
+        return results!
     }
     
-    public func get() -> [Any]{
-        []
+    public func get() -> [Daikiri] {
+        doQuery().map {
+            Entity.init(managed: $0 as! NSManagedObject) as! Daikiri            
+        }
     }
     
-    public func first() -> Any{
-        []
+    public func first() -> Daikiri? {
+        nil
     }
     
     

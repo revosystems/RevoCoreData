@@ -12,13 +12,14 @@
 		8D3C8EB223C4E0ED003A5993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB123C4E0ED003A5993 /* SceneDelegate.swift */; };
 		8D3C8EB423C4E0ED003A5993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB323C4E0ED003A5993 /* ViewController.swift */; };
 		8D3C8EB723C4E0ED003A5993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB523C4E0ED003A5993 /* Main.storyboard */; };
-		8D3C8EBA23C4E0ED003A5993 /* daikiri_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB823C4E0ED003A5993 /* daikiri_swift.xcdatamodeld */; };
+		8D3C8EBA23C4E0ED003A5993 /* daikiri-swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EB823C4E0ED003A5993 /* daikiri-swift.xcdatamodeld */; };
 		8D3C8EBC23C4E0EE003A5993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C8EBB23C4E0EE003A5993 /* Assets.xcassets */; };
 		8D3C8EBF23C4E0EE003A5993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3C8EBD23C4E0EE003A5993 /* LaunchScreen.storyboard */; };
 		8D3C8ECA23C4E0EF003A5993 /* daikiri_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EC923C4E0EF003A5993 /* daikiri_swiftTests.swift */; };
 		8D3C8ED823C4E160003A5993 /* Daikiri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED523C4E160003A5993 /* Daikiri.swift */; };
 		8D3C8ED923C4E160003A5993 /* DaikiriCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED623C4E160003A5993 /* DaikiriCoreData.swift */; };
 		8D3C8EDA23C4E160003A5993 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */; };
+		8D3C8EDD23C4E373003A5993 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C8EDC23C4E373003A5993 /* Hero.swift */; };
 		FC39CB2F52C23ED14BB9B9AC /* Pods_daikiri_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AE31F37DFC78C22B59C6A9 /* Pods_daikiri_swiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		8D3C8ED523C4E160003A5993 /* Daikiri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daikiri.swift; sourceTree = "<group>"; };
 		8D3C8ED623C4E160003A5993 /* DaikiriCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaikiriCoreData.swift; sourceTree = "<group>"; };
 		8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		8D3C8EDC23C4E373003A5993 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		B8C752F0964592BD036E7617 /* Pods_daikiri_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daikiri_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB3FBC191660E31001D9ADE /* Pods-daikiri-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daikiri-swiftTests.release.xcconfig"; path = "Target Support Files/Pods-daikiri-swiftTests/Pods-daikiri-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		8D3C8EAE23C4E0ED003A5993 /* daikiri-swift */ = {
 			isa = PBXGroup;
 			children = (
+				8D3C8EDB23C4E368003A5993 /* models */,
 				8D3C8ED423C4E13E003A5993 /* lib */,
 				8D3C8EAF23C4E0ED003A5993 /* AppDelegate.swift */,
 				8D3C8EB123C4E0ED003A5993 /* SceneDelegate.swift */,
@@ -127,7 +130,7 @@
 				8D3C8EBB23C4E0EE003A5993 /* Assets.xcassets */,
 				8D3C8EBD23C4E0EE003A5993 /* LaunchScreen.storyboard */,
 				8D3C8EC023C4E0EE003A5993 /* Info.plist */,
-				8D3C8EB823C4E0ED003A5993 /* daikiri_swift.xcdatamodeld */,
+				8D3C8EB823C4E0ED003A5993 /* daikiri-swift.xcdatamodeld */,
 			);
 			path = "daikiri-swift";
 			sourceTree = "<group>";
@@ -149,6 +152,14 @@
 				8D3C8ED723C4E160003A5993 /* QueryBuilder.swift */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		8D3C8EDB23C4E368003A5993 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8D3C8EDC23C4E373003A5993 /* Hero.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,10 +333,11 @@
 				8D3C8EDA23C4E160003A5993 /* QueryBuilder.swift in Sources */,
 				8D3C8ED923C4E160003A5993 /* DaikiriCoreData.swift in Sources */,
 				8D3C8EB423C4E0ED003A5993 /* ViewController.swift in Sources */,
+				8D3C8EDD23C4E373003A5993 /* Hero.swift in Sources */,
 				8D3C8ED823C4E160003A5993 /* Daikiri.swift in Sources */,
 				8D3C8EB023C4E0ED003A5993 /* AppDelegate.swift in Sources */,
 				8D3C8EB223C4E0ED003A5993 /* SceneDelegate.swift in Sources */,
-				8D3C8EBA23C4E0ED003A5993 /* daikiri_swift.xcdatamodeld in Sources */,
+				8D3C8EBA23C4E0ED003A5993 /* daikiri-swift.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,13 +610,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8D3C8EB823C4E0ED003A5993 /* daikiri_swift.xcdatamodeld */ = {
+		8D3C8EB823C4E0ED003A5993 /* daikiri-swift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				8D3C8EB923C4E0ED003A5993 /* daikiri_swift.xcdatamodel */,
 			);
 			currentVersion = 8D3C8EB923C4E0ED003A5993 /* daikiri_swift.xcdatamodel */;
-			path = daikiri_swift.xcdatamodeld;
+			path = "daikiri-swift.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

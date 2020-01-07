@@ -2,9 +2,19 @@ import Foundation
 import CoreData
 import RevoFoundation
 
-class Daikiri : NSObject {
+class Daikiri : NSObject, FromManaged {
     
-    var id:Int?
+    @objc var id:Int?
+    
+    required init (managed: NSManagedObject?){
+        if let managed = managed {
+            fromManaged(managed)
+        }
+    }
+    
+    override init(){
+        super.init()
+    }
     
     static var entityName : String {
         String(describing: type(of: Self.self)).replace(".Type", "")
@@ -14,14 +24,16 @@ class Daikiri : NSObject {
         DaikiriCoreData.shared.context
     }
     
-    public static var query:QueryBuilder{
+    public static var query:QueryBuilder<Self>{
         QueryBuilder(entityName)
     }
     
     public func create() {
+        print(Self.entityName)
         let entity  = NSEntityDescription.entity(forEntityName: Self.entityName, in:context)!
         let managed = NSManagedObject(entity:entity, insertInto: context)
         toManaged(managed)
+        DaikiriCoreData.shared.saveContext()
     }
     
     public func update() -> Bool {
@@ -62,18 +74,13 @@ class Daikiri : NSObject {
     
     // MARK: - Query
     
+    public static func all() -> [Daikiri]{
+        query.get()
+    }
+    
     public static func find(_ id:Int) -> Daikiri? {
         //query.whereField(id, is:id).first()
         return nil
     }
-    
-    public func all() -> [NSManagedObject]? {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: Self.entityName)
-        do{
-            return try context.fetch(fetchRequest)
-        } catch {
-            return nil
-        }
-    }
-    
+        
 }
